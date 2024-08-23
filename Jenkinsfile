@@ -22,5 +22,13 @@ pipeline {
                sh 'docker images'
             }
         }
+        stage('Push the docker image to docker hub') {
+            steps {
+               sh 'docker push samikban/spring-petclinic-0601:v1.3'
+               sh 'docker ps'
+               sh 'docker rm spring-app-container'
+               sh 'docker rmi samikban/spring-petclinic-0601:v1.3'
+            }
+        }
     }
 }
