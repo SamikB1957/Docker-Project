@@ -19,6 +19,7 @@ pipeline {
                sh 'sleep 20'
                sh 'docker ps'
                sh 'docker stop spring-app-container'
+               sh 'docker rm spring-app-container'
                sh 'docker images'
             }
         }
