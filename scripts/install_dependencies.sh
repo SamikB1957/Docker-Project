@@ -8,4 +8,4 @@ unzip awscliv2.zip
 sudo ./aws/install
 
 
-aws s3 cp s3://codebuild-demo-do16-1/app.jar /home/ubuntu/app.jar
+aws s3 cp s3://demo-codebuild-artifact-011528264159/app.jar /home/ubuntu/app.jar
